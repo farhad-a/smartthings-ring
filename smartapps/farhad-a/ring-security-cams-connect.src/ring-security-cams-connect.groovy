@@ -93,7 +93,7 @@ def initialize() {
     def name = lightList[it]
     if (dev == null) {
       try {
-        addChildDevice("Ring Camera", it, null, ["name": "Ring: " + name])
+        addChildDevice("Ring Security Cam", it, null, ["name": "Ring: " + name])
       } catch (e) {
         log.debug "addChildDevice Error: $e"
       }
